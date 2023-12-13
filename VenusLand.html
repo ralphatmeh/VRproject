@@ -24,6 +24,26 @@
                  animation__click="startEvents: click"
                  animation__reset="startEvents: reset"
          ></a-entity>
+
+         <a-entity
+         id="info"
+         geometry="primitive: plane; width: 2; height: 0.5;"
+         material="color: #808080; shader: flat"
+         text="value: INFO; color: #000000; align: center; width: 4; wrapCount: 17; font: https://cdn.aframe.io/fonts/Exo2Bold.fnt"
+         position="-3 2 -3"
+         scale="0.3 0.3 0.3"
+         event-set__enter="_event: mouseenter; _target: #info-text; visible: true"
+         event-set__leave="_event: mouseleave; _target: #info-text; visible: false"
+         animation__click="startEvents: click"
+       ></a-entity>
+
+       <a-entity
+       id="info-text"
+       text="value: Don't stay here for long. Venus has extremely high temperatures!; color: white; align: center; width: 4; wrapCount: 30; font: https://cdn.aframe.io/fonts/Exo2Bold.fnt"
+       position="0 1.3 -2"
+       scale="1 1 1"
+       visible="false"
+     ></a-entity>  
         </a-camera>
 
         <a-sky color="#FFD580"  scale="10 10 10"></a-sky>
