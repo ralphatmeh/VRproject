@@ -9,7 +9,7 @@
   
   <body>   
     <a-scene   cursor="rayOrigin: mouse"> 
-        <a-camera  id="cam"  position="0 10 70"  look-controls  wasd-controls="acceleration:100"> 
+        <a-camera  id="cam"  position="180 0 700"  look-controls  wasd-controls="acceleration:100"> 
 
           <a-entity
           id="ship"
@@ -38,8 +38,8 @@
         <a-entity
         id="Sun"
         gltf-model="Sun.glb"
-        position="-250 250 -200"
-        scale="0.05 0.05 0.05"
+        position="-250 1000 -1000"
+        scale="0.055 0.055 0.055"
       ></a-entity>
 
       <a-entity 
@@ -47,7 +47,7 @@
       class="clickable"
       gltf-model="EarthLand.glb"
       scale="200 200 200"
-      position="0 -70 0"
+      position="0 -20 0"
       rotation="0 0 0"
     ></a-entity>
 
