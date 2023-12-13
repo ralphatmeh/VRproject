@@ -9,7 +9,7 @@
   
   <body>   
     <a-scene   cursor="rayOrigin: mouse"> 
-        <a-camera  id="cam"  position="100 10 70"  look-controls  wasd-controls="acceleration:100"> 
+        <a-camera  id="cam"  position="180 10 162"  look-controls  wasd-controls="acceleration:100"> 
 
           <a-entity
           id="ship"
@@ -52,7 +52,15 @@
     ></a-entity>
 
    
+    <a-entity
+    id="Astro"
+    class="clickable"
+    gltf-model="NeilArmstrong.glb"
+    scale="20 20 20"
+    position="250 -20 60"
+    rotation="0 -30 0"
     
+  ></a-entity>
 
     </a-scene>
     

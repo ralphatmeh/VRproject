@@ -43,15 +43,15 @@
     <!-- Lights -->
     <a-entity id="Light1" light="type: directional; intensity: 5; target: #scene" animation="property: light.intensity; from: 1; to: 1; loop: true; dir: alternate; dur: 3500; easing: linear"></a-entity>
 
-    <a-entity id="Light2" light="type: directional; intensity: 5; target: #scene" animation="property: light.intensity; from: 4; to: 2; loop: true; dir: alternate; dur: 3500; easing: linear" position="0 4 5"></a-entity>
+    <a-entity id="Light2" light="type: directional; intensity: 5; target: #scene" animation="property: light.intensity; from: 3; to: 2; loop: true; dir: alternate; dur: 3500; easing: linear" position="0 4 5"></a-entity>
 
-    <a-entity id="Light3" light="type: directional; intensity: 5; target: #scene" animation="property: light.intensity; from: 4; to: 2; loop: true; dir: alternate; dur: 3500; easing: linear" position="0 4 -5"></a-entity>
+    <a-entity id="Light3" light="type: directional; intensity: 5; target: #scene" animation="property: light.intensity; from: 3; to: 2; loop: true; dir: alternate; dur: 3500; easing: linear" position="0 4 -5"></a-entity>
 
-    <a-entity id="Light4" light="type: directional; intensity: 5; target: #scene" animation="property: light.intensity; from: 4; to: 2; loop: true; dir: alternate; dur: 3500; easing: linear" position="3 4 0"></a-entity>
+    <a-entity id="Light4" light="type: directional; intensity: 5; target: #scene" animation="property: light.intensity; from: 3; to: 2; loop: true; dir: alternate; dur: 3500; easing: linear" position="3 4 0"></a-entity>
 
-    <a-entity id="Light5" light="type: directional; intensity: 5; target: #scene" animation="property: light.intensity; from: 4; to: 2; loop: true; dir: alternate; dur: 3500; easing: linear" position="-3 4 0"></a-entity>
+    <a-entity id="Light5" light="type: directional; intensity: 5; target: #scene" animation="property: light.intensity; from: 3; to: 2; loop: true; dir: alternate; dur: 3500; easing: linear" position="-3 4 0"></a-entity>
 
-    <a-entity id="Light6" light="type: directional; intensity: 5; target: #scene" animation="property: light.intensity; from: 4; to: 2; loop: true; dir: alternate; dur: 3500; easing: linear" position="0 0.5 0"></a-entity>
+    <a-entity id="Light6" light="type: directional; intensity: 5; target: #scene" animation="property: light.intensity; from: 3; to: 2; loop: true; dir: alternate; dur: 3500; easing: linear" position="0 0.5 0"></a-entity>
 
     <!-- Sun Illusion light -->
 
@@ -205,8 +205,9 @@
     <a-entity
     id="Astro"
     class="clickable"
-    gltf-model="astronaut.glb"
-    scale="5 5 5"
+    material="flatShading: true"
+    gltf-model="NeilArmstrong.glb"
+    scale="9 9 9"
     position="5 -13 -20"
     rotation="0 -25 0">  
   <a-entity
@@ -214,9 +215,9 @@
   geometry="primitive: plane; width: 4; height: 1;"
   material="color: #ADD8E6; shader: flat"
   text="value: Look around and select your destination!; color: #8b0000; align: center; width: 4; wrapCount: 20; font: https://cdn.aframe.io/fonts/Exo2Bold.fnt"
-  position="-1 4 0"
+  position="-1 2 0"
   rotation = "0 30 0"
-  scale="1 1 1"
+  scale="0.5 0.5 0.5"
  ></a-entity>
 </a-entity>
 
