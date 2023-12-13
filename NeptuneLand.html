@@ -46,7 +46,8 @@
 
         </a-camera>
 
-        <a-sky color="#000000"  scale="10 10 10"></a-sky>
+       <!-- <a-sky color="#000000"  scale="10 10 10"></a-sky> -->
+        <a-sky src="neptunesky.jpg" scale="10 10 10" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-sky>
 
         <a-light type="ambient" intensity="3"  animation="property: light.intensity;
         from: 2;
@@ -64,14 +65,7 @@
       ></a-entity>
 
 
-      <a-entity 
-      id="NeptuneLand"     
-      class="clickable"
-      gltf-model="NeptuneLand.glb"
-      scale="100 100 100"
-      position="0 0 0"
-      rotation="0 0 0"
-    ></a-entity>
+   
 
     </a-scene>
     
